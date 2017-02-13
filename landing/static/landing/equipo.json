@@ -1,0 +1,381 @@
+{
+	"coordinador": {
+		"nombre": "Rafael Ignacio Bonilla Armijos",
+		"cargo": "Profesor Ocasional 1",
+		"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/rafael%20bonilla.jpg",
+		"telefono": "2269-847",
+		"mail": "rabonilla@espol.edu.ec",
+		"titulo": "Master of Science in Computer Science (Purdue University)"
+	},
+	"profesores":[
+		{
+			"nombre": "Calderón Argüello, Marco Antonio",
+			"cargo": "Profesor Ocasional 1",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mcalderon.jpg",
+			"telefono": "2269-980",
+			"mail": "ancalder@espol.edu.ec",
+			"titulo": "Master of Science Computer Science (University of Southern California)"
+		},
+		{
+			"nombre": "Vaca Ruiz, Carmen Karina",
+			"cargo": "Profesor Tiempo Completo Agregado 3",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/cvaca_0.jpg",
+			"telefono": "2269-847",
+			"mail": "cvaca@espol.edu.ec",
+			"titulo": "PhD in Information Technology (Politécnico de Milán)"
+		},
+		{
+			"nombre": "Tapia Rosero, Ana Teresa",
+			"cargo": "Profesor Tiempo Completo Agregado 3",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/ana%20tapia.jpg",
+			"telefono": "2269 - 815",
+			"mail": "atapia@fiec.espol.edu.ec",
+			"titulo": "Doctora en Ingeniería (Universidad de Ghent)"
+		},
+		{
+			"nombre": "Pincay Nieves, Jhonny Vladimir",
+			"cargo": "Profesor Ocasional 1",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/johnny%20pincay_0.jpg",
+			"telefono": "2269-847",
+			"mail": "jvpincay@espol.edu.ec",
+			"titulo": ""
+		},
+		{
+			"nombre": "Realpe Robalino, Miguel Andrés",
+			"cargo": "Profesor Invitado",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mrealpe_0.jpg",
+			"telefono": "",
+			"mail": "",
+			"titulo": ""
+		},
+		{
+			"nombre": "Saraguro Bravo, Rodrigo Alexander",
+			"cargo": "Profesor Ocasional 1",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/saraguro.jpg",
+			"telefono": "",
+			"mail": "",
+			"titulo": ""
+		},
+		{
+			"nombre": "Magallanes Borbor, Jorge Antonio",
+			"cargo": "Profesor Ocasional 1",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/rafael%20bonilla.jpg",
+			"telefono": "2269 - 815",
+			"mail": "jmagalla@espol.edu.ec",
+			"titulo": "Máster en Investigación en Informática. (Universidad Complutense de Madrid, España)"		
+		},
+		{
+			"nombre": "Yanez Pazmiño, Wendy",
+			"cargo": "Profesor Ocasional 1",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/pyanez_0.jpg",
+			"telefono": "",
+			"mail": "",
+			"titulo": ""
+		},
+		{
+			"nombre": "Zambrano Romero, Orlando Enrique",
+			"cargo": "Profesor Ocasional 1",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/orlando%20zambrano.jpg",
+			"telefono": "",
+			"mail": "",
+			"titulo": ""
+		},
+		{
+			"nombre": "Rafael Ignacio Bonilla Armijos",
+			"cargo": "Profesor Ocasional 1",
+			"foto": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/rafael%20bonilla.jpg",
+			"telefono": "2269-847",
+			"mail": "rabonilla@espol.edu.ec",
+			"titulo": "Master of Science in Computer Science (Purdue University)"
+		}
+	],
+	"ayudantes":{
+		"TA": [
+			{
+				"nombre": "Galo Daniel Castillo Lopez",
+				"matricula": "201410264",
+				"correo": "gadacast@espol.edu.ec",
+				"horarios": [
+					{
+						"dia": "Lunes",
+						"aula": "24A-210",
+						"hora": "14:00-16:00"
+					},
+					{
+						"dia": "Miercoles",
+						"aula": "24A-210",
+						"hora": "14:00-16:00"
+					},
+					{
+						"dia": "Martes",
+						"aula": "Sala de Ayudantes de la FIEC",
+						"hora": "10:30-11:30"
+					},
+					{
+						"dia": "Jueves",
+						"aula": "Sala de Ayudantes de la FIEC",
+						"hora": "10:30-11:30"
+					}					
+				]
+			},
+			{
+				"nombre": "Jorge Luis Cedeño Arteaga",
+				"matricula": "201302882",
+				"correo": "jlcedeno@espol.edu.ec",
+				"horarios": [
+					{
+						"dia": "Martes",
+						"aula": "24A-103",
+						"hora": "13:30-17:30"
+					},
+					{
+						"dia": "Martes",
+						"aula": "Sala de Ayudantes de la FIEC",
+						"hora": "12:30-13:30"
+					},
+					{
+						"dia": "Jueves",
+						"aula": "Sala de Ayudantes de la FIEC",
+						"hora": "09:30-10:30"
+					}				
+				]
+			},
+			{
+				"nombre": "María Belén Guaranda Cabezas",
+				"matricula": "201410871",
+				"correo": "mguarand@espol.edu.ec",
+				"horarios": [
+					{
+						"dia": "Lunes",
+						"aula": "24A-207",
+						"hora": "07:30-09:30"
+					},
+					{
+						"dia": "Miercoles",
+						"aula": "24A-113",
+						"hora": "07:30-09:30"
+					},
+					{
+						"dia": "Viernes",
+						"aula": "Sala de Ayudantes de la FIEC",
+						"hora": "11:30-12:30"
+					}				
+				]
+			},
+			{
+				"nombre": "Gerald Fernando Gutierrez Jimenez",
+				"matricula": "201417433",
+				"correo": "gerfegut@espol.edu.ec",
+				"horarios": [
+					{
+						"dia": "Viernes",
+						"aula": "24A-210",
+						"hora": "07:30-10:30"
+					},
+					{
+						"dia": "Martes",
+						"aula": "24A-204",
+						"hora": "08:30-09:30"
+					},
+					{
+						"dia": "Viernes",
+						"aula": "CIB (Biblioteca)",
+						"hora": "11:30-13:30"
+					}				
+				]
+			},
+			{
+				"nombre": "Emmanuel Fernando Morán Barreiro",
+				"matricula": "201304087",
+				"correo": "fnando1995@gmail.com",
+				"horarios": [
+					{
+						"dia": "Lunes",
+						"aula": "24A-103",
+						"hora": "11:30-13:30"
+					},
+					{
+						"dia": "Lunes",
+						"aula": "24A-103",
+						"hora": "07:30-09:30"
+					},
+					{
+						"dia": "Martes",
+						"aula": "Sala de Ayudantes de la FIEC",
+						"hora": "07:30-08:30"
+					},
+					{
+						"dia": "Jueves",
+						"aula": "Sala de Ayudantes de la FIEC",
+						"hora": "07:30-08:30"
+					}					
+				]
+			},
+			{
+				"nombre": "Leonardo Xavier Kuffo Rivero",
+				"matricula": "201410224",
+				"correo": "lkuffo@espol.edu.ec",
+				"horarios": [
+					{
+						"dia": "Martes",
+						"aula": "SP-01",
+						"hora": "09:30-11:30"
+					},
+					{
+						"dia": "Viernes",
+						"aula": "24A-204",
+						"hora": "11:30-14:30"
+					}				
+				]
+			},
+			{
+				"nombre": "Jorge Romeo Murillo",
+				"matricula": "N/A",
+				"correo": "jorgermurillo@gmail.com",
+				"horarios": [
+					{
+						"dia": "Martes",
+						"aula": "24A-114",
+						"hora": "14:00-16:00"
+					},
+					{
+						"dia": "Jueves",
+						"aula": "24A-103",
+						"hora": "14:00-16:00"
+					},
+					{
+						"dia": "Viernes",
+						"aula": "Sala de Ayudantes de la FIEC",
+						"hora": "10:00-11:00"
+					}				
+				]
+			},
+			{
+				"nombre": "Jorge Isaac Guerra Solís",
+				"matricula": "201421632",
+				"correo": "jiguerra@espol.edu.ec",
+				"horarios": [
+					{
+						"dia": "Jueves",
+						"aula": "24A-201",
+						"hora": "07:30-09:30"
+					}				
+				]
+			}
+		],
+		"graders":[
+			{
+				"nombre": "Oswaldo Josmany Aguilar Noboa",
+				"matricula": "201302882",
+				"correo": "jlcedeno@espol.edu.ec",
+				"profesores": ["Cruz Maria Falcones"]
+			},
+			{
+				"nombre": "Jorge Luis Cedeño Arteaga",
+				"matricula": "201419079",
+				"correo": "oswjagui@espol.edu.ec",
+				"profesores": ["Eduardo Murillo Bajana", "Jorge Magallanes Borbor"]
+			},
+			{
+				"nombre": "Betty Lucy Cepeda Salgado",
+				"matricula": "N/A",
+				"correo": "N/A",
+				"profesores": ["Jorge Ugarte Fajardo", "Edison del Rosario Camposano", "José Villa Vásquez"]
+			},
+			{
+				"nombre": "Josselyn Esther Gallo Muñoz",
+				"matricula": "N/A",
+				"correo": "N/A",
+				"profesores": ["Ginger Saltos Bernal", "Orlando Zambrano Romero"]
+			},
+			{
+				"nombre": "Jorge Isaac Guerra Solís",
+				"matricula": "201421632",
+				"correo": "jiguerra@espol.edu.ec",
+				"profesores": ["Marco Calderón Arguello", "Eduardo Cruz Ramirez", "Orlando Zambrano Romero"]
+			},
+			{
+				"nombre": "Gerald Fernando Gutierrez Jimenez",
+				"matricula": "N/A",
+				"correo": "N/A",
+				"profesores": ["Rocío Mera Suárez", "Ana Tapia Rosero"]
+			},
+			{
+				"nombre": "Andrea Viviana Naranjo Lima",
+				"matricula": "N/A",
+				"correo": "avnaranj@espol.edu.ec",
+				"profesores": ["Meiying Cheung Ruíz", "Ana Tapia Rosero"]
+			},
+			{
+				"nombre": "Joselyn Ibeth Parra Córdova",
+				"matricula": "201421319",
+				"correo": "jiparra@espol.edu.ec",
+				"profesores": ["Jhonny Pincay Nieves", "Dalton Noboa Macías", "Jose Villa Vasquez"]
+			},
+			{
+				"nombre": "Jaminson Riascos Muguerza",
+				"matricula": "201304684",
+				"correo": "riascos@espol.edu.ec",
+				"profesores": ["Lorena Carlo Unda", "Rafael Bonilla Armijos"]
+			},
+			{
+				"nombre": "Alexis Leonardo Rivadeneira Sevilla",
+				"matricula": "201506161",
+				"correo": "alrivade@espol.edu.ec",
+				"profesores": ["Frank Malo", "Miguel Realpe Robalino"]
+			},
+			{
+				"nombre": "Juan Carlos Saltos Núñez",
+				"matricula": "N/A",
+				"correo": "N/A",
+				"profesores": ["Verónica Carrasco Idrovo", "Miguel Realpe Robalino"]
+			},
+			{
+				"nombre": "Ariel Enrique Sánchez Muñoz",
+				"matricula": "201507022",
+				"correo": "ariensan@espol.edu.ec",
+				"profesores": ["Luis Rodriguez Ojeda", "Jorge Magallanes Borbor"]
+			},
+			{
+				"nombre": "Miguel Ángel Sánchez Romero",
+				"matricula": "201505935",
+				"correo": "migansan@espol.edu.ec",
+				"profesores": ["Ángela Carrera Rivera", "Rodrigo Saraguro Bravo"]
+			},
+			{
+				"nombre": "Anni Rosa Santacruz Hernández",
+				"matricula": "N/A",
+				"correo": "N/A",
+				"profesores": ["Paola Yánez Pazmiño", "Carmen Vaca Ruiz"]
+			},
+			{
+				"nombre": "Michael René Silva Ordoñez",
+				"matricula": "201506131",
+				"correo": "mrsilva@espol.edu.ec",
+				"profesores": ["Allan Avendaño Sudario", "Rodrigo Saraguro Bravo"]
+			}
+		]
+	},
+	"geo-aulas": [
+		{
+			"nombre": "24A",
+			"latitud": "-2.1453837",
+			"longitud": "-79.9661192"
+		},
+		{
+			"nombre": "SP-01",
+			"latitud": "-2.1454588",
+			"longitud": "-79.9663821"
+		},
+		{
+			"nombre": "CIB",
+			"latitud": "-2.1469986",
+			"longitud": "-79.9659891"
+		},
+		{
+			"nombre": "Sala de Ayudantes de Fiec",
+			"latitud": "-2.1453837",
+			"longitud": "-79.9661192"
+		}
+	]
+}

@@ -1,0 +1,311 @@
+html {
+  overflow-y: scroll;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Muli';
+    font-size:16px;
+}
+
+#intro{
+
+	padding-bottom: 150px;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img1.jpg) no-repeat center;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-title{
+	font-family: 'Muli', sans-serif;
+	color: white;
+	word-wrap: break-word;
+}
+.header-text{
+	color: #cccccc;
+	opacity: 0;
+	word-wrap: break-word;
+}
+
+/**
+ * ========================================
+ * SECTION 1
+ * ========================================
+ */
+
+ .section1-title{
+ 	font-family: 'Muli', sans-serif;
+ 	color: #01A4A4;
+ 	text-align: center;
+ }
+ .section1-label{
+	font-size: 20px;
+	font-weight: bold;
+	color: #384047;
+	text-align: center;
+ }
+
+ /**
+ * ========================================
+ * SECTION 2
+ * ========================================
+ */
+#porque{
+	background-color: #01A4A4;
+	color: #EFEFE7;
+}
+.section2-title{
+	font-family: 'Muli', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+}
+.section2-sub{
+	text-align: center;
+}
+.section2-icon-container{
+	text-align: center;
+	transition: all 0.25s;
+}
+.section2-icon-container:hover{
+	color: #ffffff;
+	transition: all 0.25s;
+}
+.section2-icon{
+	font-size: 100px;
+}
+.icon-label{
+	font-size: 20px;
+}
+.description{
+	font-size: 18px;
+	text-align: center;
+}
+
+/**
+ * ========================================
+ * SECTION 3
+ * ========================================
+ */
+ #contenido{
+ 	font-size: 20px;
+ }
+ .landing-section3-title{
+ 	font-family: 'Muli', sans-serif;
+ 	color: #01A4A4;
+ 	text-align: center;
+ }
+ .section3-icon-container{
+ 	transition: all 0.25s;
+ }
+ .section3-icon-container:hover{
+ 	color: #01A4A4;
+ 	transition: all 0.25s;
+ }
+ .section3-icon{
+ 	font-size: 30px;
+ }
+
+/**
+ * ========================================
+ * SECTION 4
+ * ========================================
+ */
+ #citas{
+ 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/people.jpg) no-repeat center;
+ 	width: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+.landing-section4-title{
+	font-family: 'Muli', sans-serif;
+ 	color: #5FCF80;
+ 	text-align: center;
+}
+
+
+/**
+ * ========================================
+ * CURSO
+ * ========================================
+ */
+
+/* ===HEADER=== */
+
+/* ===BODY=== */
+ #curso-body{
+ 	font-size: 16px;
+ 	text-align: justify;
+ }
+/* ===SYLLABUS=== */
+#syllabus .btn, #policies .btn{
+	font-size: 16px;
+}
+
+ /* ===POLITICAS=== */
+#policies .btn{
+	font-size: 16px;
+}
+/* Estilos para cambiar el color de los tabs - BEGIN */
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover{
+	background-color: #01A4A4;
+	color: #FFF;
+	transition: all 0.25s;
+}
+.nav-tabs>li>a{
+	color: #01A4A4;
+	transition: all 0.25s;
+}
+.nav-tabs>li>a:hover{
+	border-color: #e6e6e6 #e6e6e6 #ddd;
+}
+/* END */
+.btn.focus, .btn:focus, .btn:hover{
+	color: #01A4A4;
+	font-weight: bold;
+}
+/* Contenedor de texto para cada indice del tab 'Politicas'*/
+.index-content{
+	border: 1px solid #E3E3E3;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}
+/* ===HORARIOS=== */
+#schedule h4{
+	text-align: center;
+}
+#class-schedule table{
+	text-align: center;
+}
+#class-schedule table td{
+	background-color: #ffffff;
+}
+#exams-schedule table{
+	text-align: center;
+}
+#exams-schedule table td{
+	background-color: #ffffff;
+}
+
+/**
+ * ========================================
+ * PROYECTOS
+ * ========================================
+ */
+
+/* ===HEADER=== */
+#proyectos-header{
+	text-align: center;
+}
+#proyectos-header .alert{
+	opacity: 0;
+	transition: all 0.25s;
+}
+/* ===SIDE-BAR=== */
+/* Estilos para cambiar el color de los tabs - BEGIN */
+#proyectos-side-bar .nav>li.active>a,
+#proyectos-side-bar .nav>li.active>a:focus,
+#proyectos-side-bar .nav>li.active>a:hover{
+	background-color: #01A4A4;
+	color: #FFF;
+	transition: all 0.25s;
+}
+#proyectos-side-bar .nav>li>a{
+	color: #01A4A4;
+	transition: all 0.25s;
+}
+#proyectos-side-bar .nav>li>a:hover{
+	color: #fff;
+	background-color: rgba(1, 164, 164, 0.5);
+	border-color: #e6e6e6 #e6e6e6 #ddd;
+}
+/* END */
+/* ===BODY=== */
+.project-panel{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/**
+ * ========================================
+ * PLANIFICACION
+ * ========================================
+ */
+
+/* ===BODY=== */
+#semanas-body .panel-title{
+	font-weight: bold;
+}
+#semanas-body .panel-link, #semanas-body .panel-link:visited{
+	color: #000;
+	transition: all 0.25s;
+}
+#semanas-body .panel-link:hover, #semanas-body .panel-link:focus{
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.15s;
+}
+.modal-title{
+	font-weight: bold;
+}
+
+
+ 
+/**
+ * ========================================
+ * MISC
+ * ========================================
+ */
+.bold{
+	font-weight: bold;
+}
+.chk-syllabus-btn,.chk-syllabus-btn:focus{
+	font-size: 20px;
+	background-color: #01A4A4;
+	border-color: #01A4A4;
+	color: #FFFFFF;
+	transition: all 0.25s;
+}
+.chk-syllabus-btn:hover,.chk-syllabus-btn:disabled{
+	background-color: #FFFFFF;
+	border-color: #01A4A4;
+	color: #01A4A4;
+	transition: all 0.25s;
+}
+.no-bullet{
+	list-style-type: none;
+}
+/* Estilo para añadir un footer a una tabla */
+.table-footer{
+ 	font-style: italic;
+ 	font-size: 12px;
+}
+/* Estilo para ocultar celdas de una tabla */
+.unwanted-td{
+	visibility: hidden;
+}
+.side-bar{
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}	
+
+@media(max-width: 767px){
+	#curso-body{
+		font-size: 14px;
+	}
+	#curso-body h4{
+		font-size: 14px;
+	}	
+	#policies table, #schedule table{
+		font-size: 10px;
+}
+

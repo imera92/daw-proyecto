@@ -1,0 +1,27 @@
+
+    	#panelIde {
+    		background-color: black;
+    	}
+    	.ideliterales {
+    		color: green;
+    	}
+    	#panelsalida {
+    		background-color: rgb(192, 220, 221);
+    	}
+    	#panelentrada {
+    		background-color: rgb(192, 220, 221);
+
+    	}
+    	.subtitulosx {
+    		color: rgb(1, 169, 177);
+    	}
+    	.israel {
+    		display: none;
+    	}
+	#cuerpo {
+    		margin-bottom: 2%;
+    
+    	}
+	#mih, #mih2 {
+    		border: none;
+    	}

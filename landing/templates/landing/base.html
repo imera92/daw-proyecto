@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fundamentos de Programación</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+         <!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-tagsinput.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/custom-bootstrap-margin-padding.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/ejerciciocss.css' %}" >
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/made.css' %}" >
+        <link rel="stylesheet" type="text/css" href="{% static 'css/ivan.css' %}" >
+        <link rel="stylesheet" type="text/css" href="{% static 'css/icons.css' %}" >
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/profesorprofile.css' %}" >
+        <link rel="stylesheet" type="text/css" href="{% static 'css/errorescss.css' %}" >
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+        <script type="text/javascript" src="{% static 'js/ckeditor.js' %}"></script>
+	</head>
+    <body>
+
+        {% block body_block %}{% endblock %}
+
+        <footer>
+            <nav class="navbar navbar-default mb-0 pb-0 ">
+                <div class="container-fluid">
+                    <div class="navbar-header pt-10 ">
+                        <div class = 'align-center'>
+                            Página Web de Fundamentos de Programación - 2017
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+
+        <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap-tagsinput.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/dynamicform.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/validarProyectos.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/validarEjercicioNuevo.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.js' %}"></script>
+        <script src="{% static 'js/jquery.smartscroll.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/israelequipo.js' %}"></script>
+        <script src="{% static 'js/leonardo_ayudantias.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/leonardo_sandboxprofesor.js' %}"></script>
+    </body>
+</html>
