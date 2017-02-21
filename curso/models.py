@@ -11,6 +11,7 @@ class Seccion(models.Model):
 	curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
 	nombre = models.CharField(max_length=50)
 	descripcion = models.TextField()
+	estado = models.CharField(max_length=8)
 
 	def __str__(self):
-		return self.id + ' - ' + self.nombre
+		return str(self.id) + ' - ' + self.nombre
