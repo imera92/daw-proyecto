@@ -5,7 +5,7 @@ class Curso(models.Model):
 	descripcion = models.TextField()
 
 	def __str__(self):
-		return self.seccion
+		return self.descripcion
 
 class Seccion(models.Model):
 	curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
