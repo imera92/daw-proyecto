@@ -27,4 +27,4 @@ class Recurso(models.Model):
 	url = models.FileField()
 
 	def __str__(self):
-		return str(self.id) + ' - ' + self.nombre +  ' - ' + self.tipo
+		return str(self.id) + ' - ' + self.nombre +  ' - ' + str(self.tipo)
