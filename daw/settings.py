@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'landing.apps.LandingConfig',
     'curso.apps.CursoConfig',
     'semana.apps.SemanaConfig',
+    'equipo.apps.EquipoConfig',
 ]
 
 MIDDLEWARE = [
