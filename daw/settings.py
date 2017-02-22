@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'curso.apps.CursoConfig',
     'semana.apps.SemanaConfig',
     'equipo.apps.EquipoConfig',
+    'ayudantias.apps.AyudantiasConfig',
 ]
 
 MIDDLEWARE = [
