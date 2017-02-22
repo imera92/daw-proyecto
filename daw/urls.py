@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^curso/', include('curso.urls')),
     url(r'^semana/', include('semana.urls')),
     url(r'^equipo/', include('equipo.urls')),
+    url(r'^ayudantias/', include('ayudantias.urls')),
 ]
 
 if settings.DEBUG is True:
