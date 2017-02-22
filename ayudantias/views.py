@@ -3,16 +3,10 @@ from .models import *
 
 # Create your views here.
 def index(request):
-	lun = Ayudantias.object.filter(dia='Lunes')
-	mar = Ayudantias.object.filter(dia='Martes')
-	mier = Ayudantias.object.filter(dia='Miercoles')
-	juev = Ayudantias.object.filter(dia='Jueves')
-	vier = Ayudantias.object.filter(dia='Viernes')
+	ayudantias = Ayudantias.objects.all()
+	dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
 	context = {
-		'lun' : lun,
-		'mar' : mar,
-		'mier' : mier,
-		'juev' : juev,
-		'vier' : vier,
+		'ayudantias' : ayudantias,
+		'dias' : dias,
 	}
 	return render(request, 'ayudantias/ayudantias.html', context)
