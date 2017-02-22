@@ -6,10 +6,16 @@ class Ayudantes(models.Model):
 	nombre = models.CharField(max_length=100)
 	correo = models.EmailField()
 
+	def __str__(self):
+		return self.matricula + ' - ' + self.nombre
+
 class Aulas(models.Model):
 	codigo = models.CharField(max_length=50, primary_key=True)
 	latitud = models.FloatField(blank=False)
 	longitud = models.FloatField(blank=False)
+
+	def __str__(self):
+		return self.codigo
 
 class Ayudantias(models.Model):
 	DAYS_CHOICES = (
@@ -23,3 +29,6 @@ class Ayudantias(models.Model):
 	aula = models.ForeignKey(Aulas, on_delete=models.CASCADE)
 	dia = models.CharField(max_length=9, choices=DAYS_CHOICES, blank=False)
 	hora = models.TimeField()
+
+	def __str__(self):
+		return self.ayudante + ' - ' + self.aula + ' - ' + self.dia + ' - ' + self.hora
