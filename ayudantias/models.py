@@ -7,9 +7,9 @@ class Ayudantes(models.Model):
 	correo = models.EmailField()
 
 class Aulas(models.Model):
-	codigo = CharField(primary_key=True)
-	latitud = FloatField(blank=False)
-	longitud = FloatField(blank=False)
+	codigo = models.CharField(max_length=50, primary_key=True)
+	latitud = models.FloatField(blank=False)
+	longitud = models.FloatField(blank=False)
 
 class Ayudantias(models.Model):
 	DAYS_CHOICES = (
@@ -21,4 +21,4 @@ class Ayudantias(models.Model):
 	)
 	ayudante = models.ForeignKey(Ayudantes, on_delete=models.CASCADE)
 	aula = models.ForeignKey(Aulas, on_delete=models.CASCADE)
-	dia = models.CharField(max_length=9, choise=DAYS_CHOICES, blank=False)
+	dia = models.CharField(max_length=9, choices=DAYS_CHOICES, blank=False)
