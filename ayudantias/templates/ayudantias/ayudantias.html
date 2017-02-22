@@ -36,19 +36,21 @@
 							<label>  </label>
 						</div>                    
 					</div>                 
-				{% for ayudantia in ayudantias %}
-					{% if ayudantia.dia == dia %}
-						<div class="row pt-5">
-							<div class="col-md-3"><p>{{ ayudantia.ayudante.nombre }}</p></div>
-							<div class="col-md-3"><p>{{ ayudantia.hora }}</p></div>
-							<div class="col-md-3"><p>{{ ayudantia.aula.codigo }}</p></div>
-							<div class="col-md-3"><button type="button" class="btn btn-primary btn-ubicacion" data-toggle="modal" data-target="#fiec">Ver Ubicación</button></div></div>
-					{% endif %}
-					</div>
-				{% endfor %}
+					{% for ayudantia in ayudantias %}
+						{% if ayudantia.dia == dia %}
+							<div class="row pt-5">
+								<div class="col-md-3"><p>{{ ayudantia.ayudante.nombre }}</p></div>
+								<div class="col-md-3"><p>{{ ayudantia.horaInicio }} - {{ ayudantia.horaFin }}</p></div>
+								<div class="col-md-3"><p>{{ ayudantia.aula.codigo }}</p></div>
+								<div class="col-md-3"><button type="button" class="btn btn-primary btn-ubicacion" data-toggle="modal" data-target="#fiec">Ver Ubicación</button></div>
+							</div>
+						{% endif %}
+					{% endfor %}
 				</div>
 			</div>
+			</div>
 		{% endfor %}
+	</div>
 
 <div id="labs" class="modal fade" role="dialog">
 	<div class="modal-dialog">
