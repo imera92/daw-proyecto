@@ -1,0 +1,63 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+{% block title %}Equipo{% endblock %}
+{% block body_block %}
+<div class="container pt-70">
+	<h1 class = 'align-center'>El Equipo</h1>
+	<h2>Coordinador de la materia</h2>
+	<p>Es la persona encargada de organizar a los profesores, escoger a los ayudantes y decidir qué se dará en la materia</p>
+	<div class="containerCoordinador">
+		<div class="panel-body">
+			<div class="imagenProfesor">
+				{% if coordinador.foto_url %}
+					<img class="equipo-foto" src="{{ coordinador.foto_url }}" alt="">
+				{% else %}
+					<img class="equipo-foto" src="{{ MEDIA_URL }}{{ coordinador.foto_archivo }}" alt="{{ coordinador.nombre }}">
+				{% endif %}
+			</div>
+			<div class="detalleProfesor">
+				<h3 class="clr-light-blue">{{ coordinador.nombre }}</h3>
+				<a href="mailto:{{ coordinador.correo }}">{{ coordinador.correo }}</a>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<h2>Profesores</h2>
+	<p>Son las personas que dan la materia de Fundamentos de Programación a los estudiantes de la ESPOL inscritos en el término actual.</p>
+	<div class="container" id="Profesores">
+		<div class="row"></div>
+		{% for profesor in profesores %}
+			<div class="col-md-6 col-xs-12 pb-15 pl-0">
+				<div class="imagenProfesor">
+					{% if profesor.foto_url %}
+						<img class="equipo-foto" src="{{ profesor.foto_url }}" alt="{{ profesor.nombre }}">
+					{% else %}
+						<img class="equipo-foto" src="{{ MEDIA_URL }}{{ profesor.foto_archivo }}" alt="{{ profesor.nombre }}">
+					{% endif %}
+				</div>
+				<div class="detalleProfesor">
+					<h3 class="clr-light-blue">{{ profesor.nombre }}</h3>
+					<a href="mailto:{{ profesor.correo }}">{{ profesor.correo }}</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<hr>
+	<h2>Ayudantes</h2>
+	<p>Son estudiantes que ya han aprobado la materia y ayudan a los profesores y al coordinador de la materia. Ellos se encargan de preparar clases de refuerzo a los estudiantes que están cursando actualmente la materia o de revisar deberes y lecciones que les encargan los profesores.</p>
+	<div class="containerAyudantes">
+		<div class="container" id="Ayudantes">
+			{% for ayudante in ayudantes %}
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h4>{{ ayudante.nombre }}</h4>
+							<a href="mailto:{{ ayudante.correo }}">{{ ayudante.correo }}</a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}
