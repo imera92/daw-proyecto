@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'landing.apps.LandingConfig',
     'curso.apps.CursoConfig',
+    'semana.apps.SemanaConfig',
 ]
 
 MIDDLEWARE = [
