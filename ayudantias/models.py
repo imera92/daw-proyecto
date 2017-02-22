@@ -28,7 +28,8 @@ class Ayudantias(models.Model):
 	ayudante = models.ForeignKey(Ayudantes, on_delete=models.CASCADE)
 	aula = models.ForeignKey(Aulas, on_delete=models.CASCADE)
 	dia = models.CharField(max_length=9, choices=DAYS_CHOICES, blank=False)
-	hora = models.TimeField()
+	horaInicio = models.TimeField(verbose_name='Empieza')
+	horaFin = models.TimeField(verbose_name='Finaliza')
 
 	def __str__(self):
 		return self.ayudante + ' - ' + self.aula + ' - ' + self.dia + ' - ' + self.hora
