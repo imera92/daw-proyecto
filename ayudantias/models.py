@@ -22,3 +22,4 @@ class Ayudantias(models.Model):
 	ayudante = models.ForeignKey(Ayudantes, on_delete=models.CASCADE)
 	aula = models.ForeignKey(Aulas, on_delete=models.CASCADE)
 	dia = models.CharField(max_length=9, choices=DAYS_CHOICES, blank=False)
+	hora = models.TimeField()
