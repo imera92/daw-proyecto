@@ -32,4 +32,4 @@ class Ayudantias(models.Model):
 	horaFin = models.TimeField(verbose_name='Finaliza')
 
 	def __str__(self):
-		return self.ayudante + ' - ' + self.aula + ' - ' + self.dia + ' - ' + self.hora
+		return self.ayudante.matricula + ' - ' + self.aula.codigo + ' - ' + self.dia
