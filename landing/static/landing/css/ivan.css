@@ -257,6 +257,38 @@ html, body {
 	font-weight: bold;
 }
 
+/**
+ * ========================================
+ * NOTICIAS
+ * ========================================
+ */
+/* ===BODY=== */
+.noticia-titulo{
+	font-size: 25px;
+	font-weight: bold;
+}
+.noticia-fecha{
+	font-size: 12px;
+}
+.read-btn{
+	background-color: #001C43;
+	color: #FFF;
+	transition: all 0.25s;
+}
+.read-btn:hover{
+	background-color: #FFF;
+	color: #001C43;
+	border-color: #001C43;
+	transition: all 0.25s;
+}
+.noticia-container{
+	color: #000;
+	transition: all 0.25s;
+}
+.noticia-container:hover{
+	color: #1BAEE5;
+	transition: all 0.25s;
+}
 
  
 /**
