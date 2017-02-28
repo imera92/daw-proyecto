@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'semana.apps.SemanaConfig',
     'equipo.apps.EquipoConfig',
     'ayudantias.apps.AyudantiasConfig',
-    'noticas.apps.NoticiasConfig',
+    'noticias.apps.NoticiasConfig',
 ]
 
 MIDDLEWARE = [
