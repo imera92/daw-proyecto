@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tinymce',
     'landing.apps.LandingConfig',
     'curso.apps.CursoConfig',
     'semana.apps.SemanaConfig',
@@ -133,3 +134,7 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': "table",
+}
