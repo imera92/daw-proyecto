@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^semana/', include('semana.urls')),
     url(r'^equipo/', include('equipo.urls')),
     url(r'^ayudantias/', include('ayudantias.urls')),
+    url(r'^noticias/', include('noticias.urls')),
 ]
 
 if settings.DEBUG is True:
