@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce import models as tinymce_models
 
 # Create your models here.
 class Curso(models.Model):
@@ -10,7 +11,7 @@ class Curso(models.Model):
 class Seccion(models.Model):
 	curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
 	nombre = models.CharField(max_length=50)
-	descripcion = models.TextField()
+	descripcion = tinymce_models.HTMLField()
 	estado = models.CharField(max_length=8)
 
 	def __str__(self):
