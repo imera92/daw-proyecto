@@ -17,6 +17,12 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework.routers import DefaultRouter
+from noticias.viewsets import NoticiaViewSet
+
+# Creamos un router para registrar nuestros viewsets
+router = DefaultRouter()
+router.register(r'noticias', NoticiaViewSet)
 
 urlpatterns = [
     url(r'^tinymce/', include('tinymce.urls')),
@@ -27,6 +33,8 @@ urlpatterns = [
     url(r'^equipo/', include('equipo.urls')),
     url(r'^ayudantias/', include('ayudantias.urls')),
     url(r'^noticias/', include('noticias.urls')),
+    url(r'^api/', include(router.urls)), # Vinculamos el router a una URL
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')), # También podemos registrar la GUI del framework para probar la API
 ]
 
 if settings.DEBUG is True:
