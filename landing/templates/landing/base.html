@@ -76,7 +76,6 @@
                 </div>
             </nav>
         </footer>
-
         <script type="text/javascript" src="{% static 'landing/js/jquery.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'landing/js/bootstrap.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'landing/js/bootstrap-tagsinput.js' %}"></script>
@@ -85,5 +84,6 @@
         <script src="{% static 'landing/js/jquery.smartscroll.js' %}"></script>
         <script type="text/javascript" src="{% static 'landing/js/index.js' %}"></script>
         <script type="text/javascript" src="{% static 'landing/js/leonardo_sandboxprofesor.js' %}"></script>
+        {% block scripts_block %}{% endblock %}
     </body>
 </html>
