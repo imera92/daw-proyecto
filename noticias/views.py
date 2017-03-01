@@ -1,6 +1,6 @@
 from django.shortcuts import render
+from .models import Noticia
 
 # Create your views here.
 def index(request):
-	context = {}
-	return render(request, 'noticias/noticias.html', context)
+	return render(request, 'noticias/noticias.html')
