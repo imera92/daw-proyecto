@@ -1,0 +1,12 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+{% block title %}Rankings{% endblock %}
+{% block body_block %}
+<div class="container pt-70 pb-20" id='rankings'>
+	<h1 class="align-center"> Rankings </h1>
+	<p class='pt-20 align-center'>En esta sección podrán encontrar a los alumnos con mayor puntuación en el sandbox.</p>
+</div>
+{% endblock %}
+{% block scripts_block %}
+<script type="text/javascript" src="{% static 'rankings/js/rankings.js' %}"></script>
+{% endblock %}
