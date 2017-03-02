@@ -34,7 +34,7 @@ urlpatterns = [
     url(r'^equipo/', include('equipo.urls')),
     url(r'^ayudantias/', include('ayudantias.urls')),
     url(r'^noticias/', include('noticias.urls')),
-    url(r'^rankings/', include('rankings.url')),
+    url(r'^rankings/', include('rankings.urls')),
     url(r'^api/', include(router.urls)), # Vinculamos el router a una URL
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')), # También podemos registrar la GUI del framework para probar la API
 ]
