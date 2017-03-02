@@ -64,7 +64,7 @@
         </nav>
 
         {% block body_block %}{% endblock %}
-
+        {% block footer_block %}
         <footer>
             <nav class="navbar navbar-default mb-0 pb-0 ">
                 <div class="container-fluid">
@@ -76,6 +76,7 @@
                 </div>
             </nav>
         </footer>
+        {% endblock %}
         <script type="text/javascript" src="{% static 'landing/js/jquery.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'landing/js/bootstrap.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'landing/js/bootstrap-tagsinput.js' %}"></script>
