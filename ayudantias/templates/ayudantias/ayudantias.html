@@ -42,7 +42,7 @@
 								<div class="col-md-3"><p>{{ ayudantia.ayudante.nombre }}</p></div>
 								<div class="col-md-3"><p>{{ ayudantia.horaInicio }} - {{ ayudantia.horaFin }}</p></div>
 								<div class="col-md-3"><p>{{ ayudantia.aula.codigo }}</p></div>
-								<div class="col-md-3"><button type="button" class="btn orange-btn" data-toggle="modal" data-target="#fiec">Ver Ubicación</button></div>
+								<div class="col-md-3"><button type="button" class="btn orange-btn" data-toggle="modal" data-target="#{{ ayudantia.aula.embed }}">Ver Ubicación</button></div>
 							</div>
 						{% endif %}
 					{% endfor %}
@@ -51,62 +51,24 @@
 			</div>
 		{% endfor %}
 	</div>
+{% for code in embed %}
+	<div id="{{ code.codigo }}" class="modal fade" role="dialog">
+		<div class="modal-dialog">
 
-<div id="labs" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">24A-210</h4>
-			</div>
-			<div class="modal-body">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7552952472134!2d-79.96738757085174!3d-2.145573999902241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303d2b4f74b%3A0xfff0794c7343feea!2sLaboratorios+de+la+FIEC%2C+Guayaquil!5e0!3m2!1ses!2sec!4v1481757903834" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">24A-210</h4>
+				</div>
+				<div class="modal-body">
+					<iframe src="{{ code.embed }}" width="550" height="550" frameborder="0" style="border:0"></iframe>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-
-<div id="cib" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">24A-210</h4>
-			</div>
-			<div class="modal-body">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7541898114623!2d-79.96663537085175!3d-2.1472693999021666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7301bd366677%3A0x7fd58f5e574a0451!2sBiblioteca+Central%2C+Avenida+Principal+de+la+ESPOL%2C+Guayaquil!5e0!3m2!1ses!2sec!4v1481757867272" width="550" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div id="fiec" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">24A-210</h4>
-			</div>
-			<div class="modal-body">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7553965601389!2d-79.96651327085182!3d-2.1454185499022613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73023ae1ac19%3A0x67b495e9ec56bc5e!2sAulas+de+la+FIEC%2C+Guayaquil!5e0!3m2!1ses!2sec!4v1481734390763" width="550" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-			</div>
-		</div>
-	</div>
-</div>
+{% endfor %}
 {% endblock %}
