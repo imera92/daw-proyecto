@@ -9,13 +9,22 @@ class Ayudantes(models.Model):
 	def __str__(self):
 		return self.matricula + ' - ' + self.nombre
 
+class APIembed(models.Model):
+	codigo = models.CharField(max_length=50, primary_key=True)
+	embed = models.CharField(max_length=500)
+
+	def __str__(self):
+		return self.codigo
+
 class Aulas(models.Model):
 	codigo = models.CharField(max_length=50, primary_key=True)
 	latitud = models.FloatField(blank=False)
 	longitud = models.FloatField(blank=False)
+	embed = models.ForeignKey(APIembed, on_delete=models.CASCADE, default='fiec')
 
 	def __str__(self):
 		return self.codigo
+
 
 class Ayudantias(models.Model):
 	DAYS_CHOICES = (
