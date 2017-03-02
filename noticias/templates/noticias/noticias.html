@@ -2,38 +2,14 @@
 {% load static %}
 {% block title %}Noticias{% endblock %}
 {% block body_block %}
-<div class="container pt-70">
-	<h1 class="align-center"> Noticias y Anuncios </h1>  
+<div class="container pt-70" id='noticias'>
+	<h1 class="align-center"> Noticias y Anuncios </h1>
 	<p class='pt-20 align-center'>En esta sección podrán encontrar las últimas noticias, anuncios y novedades respecto al curso.</p>
-	<div class='row pt-20'>
-		<div class='col-md-4'>
-			<div class='noticia-container'>
-				<span class='noticia-titulo'>Inauguración del sitio web de Fundamentos de Computación</span>
-				<br>
-				<span class='noticia-fecha'>Publicado: 28/02/2017</span>
-				<br>
-				<button class='btn read-btn mt-20'>Leer más</button>
-			</div>
-		</div>
-		<div class='col-md-4'>
-			<div class='noticia-container'>
-				<span class='noticia-titulo'>¡Nueva Sección!: Rankings</span>
-				<br>
-				<span class='noticia-fecha'>Publicado: 28/02/2017</span>
-				<br>
-				<button class='btn read-btn mt-20'>Leer más</button>
-			</div>
-		</div>
-		<div class='col-md-4'>
-			<div class='noticia-container'>
-				<span class='noticia-titulo'>Incentivos para alumnos mejores puntuados</span>
-				<br>
-				<span class='noticia-fecha'>Publicado: 28/02/2017</span>
-				<br>
-				<button class='btn read-btn mt-20'>Leer más</button>
-			</div>
-		</div>
-	</div>
-	<div class='pb-50'></div>
 </div>
+{% endblock %}
+
+{% block footer_block %}{% endblock %}
+
+{% block scripts_block %}
+<script type="text/javascript" src="{% static 'noticias/js/noticias.js' %}"></script>
 {% endblock %}
