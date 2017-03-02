@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'equipo.apps.EquipoConfig',
     'ayudantias.apps.AyudantiasConfig',
     'noticias.apps.NoticiasConfig',
+    'rankings.apps.RankingsConfig',
 ]
 
 MIDDLEWARE = [
