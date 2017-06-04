@@ -5,6 +5,10 @@ from __future__ import unicode_literals
 from django.db import migrations, models
 import django.db.models.deletion
 
+from django.core.management import call_command
+
+def loadfixture(apps, schema_editor):
+    call_command('loaddata', 'initial_data.json')
 
 class Migration(migrations.Migration):
 
@@ -13,9 +17,11 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        migrations.RunPython(loadfixture),
         migrations.AddField(
             model_name='aulas',
             name='embed',
             field=models.ForeignKey(default='fiec', on_delete=django.db.models.deletion.CASCADE, to='ayudantias.APIembed'),
+
         ),
     ]
