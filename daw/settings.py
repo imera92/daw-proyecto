@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'daw-proyecto',
         'USER': 'postgres',
         'PASSWORD': 'cd3fg3cd3',
-        'HOST': '',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
